@@ -12,7 +12,7 @@ import Room1 from "../assets/images/Room 1.png";
 import Room2 from "../assets/images/Room 2.png";
 import Room3 from "../assets/images/Room 3.png";
 import Room4 from "../assets/images/Room 4.jpeg";
-import LocationIcon from "../assets/svg/LocationIcon.svg";
+import LocationIcon from "../assets/svg/locationIcon.svg";
 import BathTubIcon from "../assets/svg/bathtubIcon.svg";
 import ToiletIcon from "../assets/svg/toiletIcon.svg";
 import BedIcon from "../assets/svg/bedIcon.svg";
