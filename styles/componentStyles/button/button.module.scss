@@ -1,0 +1,98 @@
+.buttonStyles {
+  border: none;
+  border-radius: 8px;
+  height: 42px;
+  width: 100%;
+  color: var(--col-primary-1);
+  background-color: var(--col-secondary-1);
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  white-space: nowrap;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.buttonStyles:hover {
+  background-color: var(--col-secondary-2);
+  color: var(--col-secondary-1);
+}
+
+.buttonStyles:disabled {
+  cursor: not-allowed;
+  background-color: var(--col-secondary-2);
+  opacity: 0.7;
+}
+
+.buttonStyles.no-icon,
+.buttonWStyles.no-icon {
+  justify-content: center;
+  padding-left: 0;
+}
+
+.buttonOutlinedStyles {
+  border: 1px solid var(--col-primary-1);
+  border-radius: 8px;
+  height: 42px;
+  width: 100%;
+  color: var(--col-primary-1);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  white-space: nowrap;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.buttonOutlinedStyles:hover {
+  color: var(--col-secondary-1);
+  background-color: var(--col-primary-1);
+}
+
+.buttonOutlinedStyles.no-icon {
+  justify-content: center;
+  padding-left: 0;
+}
+.buttonOutlinedStyles:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.buttonWStyles {
+  border: none;
+  border-radius: 8px;
+  height: 42px;
+  width: 100%;
+  color: var(--col-secondary-1);
+  background-color: var(--col-primary-1);
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  white-space: nowrap;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.buttonWStyles:hover {
+  color: var(--col-primary-1);
+  background-color: var(--col-secondary-1);
+  border: 1px solid var(--col-primary-1);
+}
+
+.buttonWStyles:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
