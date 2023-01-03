@@ -7,6 +7,7 @@
   --col-secondary-2: #e4d6f5;
   --col-secondary-3: #d1a8ff;
   --col-secondary-4: rgba(97, 29, 175, 0.6);
+  --col-secondary-5: rgba(64, 25, 109, 0.8);
 
   --col-text-1: #333333;
   --col-text-2: #828282;
@@ -23,7 +24,6 @@
 
 html,
 body {
-  max-width: 100vw;
   overflow-x: hidden;
   font-family: "Work Sans", sans-serif;
   background: var(--col-primary-1);
