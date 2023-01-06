@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/router";
 
 import styles from "../styles/Home.module.scss";
 import ButtonW from "../components/Button/ButtonW";
@@ -48,6 +49,7 @@ import TwitterIcon from "../assets/svg/social-icons/icons8-twitter.svg";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 
 export default function Home() {
+  const router = useRouter();
   const [openDrawer, setOpenDrawer] = useState<boolean>(false);
   const [scrollUp, setScrollUp] = useState<boolean>(false);
 
@@ -118,8 +120,11 @@ export default function Home() {
         </ul>
 
         <div className={styles["nav-actions"]}>
-          <ButtonW label="Sign Up" />
-          <ButtonOutlined label="Log In" />
+          <ButtonW label="Sign Up" onClick={() => router.push("/signup")} />
+          <ButtonOutlined
+            label="Log In"
+            onClick={() => router.push("/login")}
+          />
         </div>
 
         <div className={styles["hamburger-part"]} ref={componentRef as any}>
@@ -140,8 +145,14 @@ export default function Home() {
                 </ul>
 
                 <div className={styles["responsive-nav-actions"]}>
-                  <Button label="Sign Up" />
-                  <ButtonOutlinedP label="Log In" />
+                  <Button
+                    label="Sign Up"
+                    onClick={() => router.push("/signup")}
+                  />
+                  <ButtonOutlinedP
+                    label="Log In"
+                    onClick={() => router.push("/login")}
+                  />
                 </div>
               </div>
             </div>
