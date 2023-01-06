@@ -1,0 +1,84 @@
+
+
+@mixin responsive($breakpoint) {
+
+    @if $breakpoint == mobile-sm{
+        @media screen and (max-width: 360px){
+            @content;
+        }
+    }
+    @if $breakpoint == mobile{
+        @media screen and (max-width: 480px){
+            @content;
+        }
+    }
+    @if $breakpoint == tab-xs{
+        @media screen and (max-width: 540px) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-sm{
+        @media screen and (max-width: 640px) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab{
+        @media screen and (max-width: 768px) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-bg{
+        @media screen and (max-width: 820px) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-lg{
+        @media screen and (max-width: 900px){
+            @content;
+        }
+    }
+    @if $breakpoint == web{
+        @media screen and (max-width: 1023px) {
+            @content;
+        }
+    }
+    @if $breakpoint == desktop-sm{
+        @media screen and (max-width: 1200px){
+            @content;
+        }
+    }
+    @if $breakpoint == desktop-lg{
+        @media screen and (max-width: 1440px){
+            @content;
+        }
+    }
+   
+    
+}
+
+@mixin flex-btw{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+@mixin grid-center{
+    display: grid;
+    place-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // FLEX COLUMN-ALONE
+  @mixin column {
+    display: flex;
+    flex-direction: column;
+  }
